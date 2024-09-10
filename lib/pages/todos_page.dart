@@ -23,7 +23,7 @@ class TodosPage extends StatelessWidget {
               SizedBox(height: 10),
               FilterTodo(),
               SizedBox(height: 10),
-              ShowTodos(),
+              Expanded(child: ShowTodos()),
             ],
           ),
         ),

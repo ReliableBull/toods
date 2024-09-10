@@ -20,10 +20,11 @@ List<Todo> filteredTodos(FilteredTodosRef ref) {
     Filter.all => todos,
   };
 
+  print(tempTodos);
   if (search.isNotEmpty) {
     tempTodos = tempTodos
         .where((todo) => todo.desc.toLowerCase().contains(search.toLowerCase()))
         .toList();
   }
-  return [];
+  return tempTodos;
 }
